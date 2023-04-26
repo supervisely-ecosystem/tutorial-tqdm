@@ -14,7 +14,7 @@ api = sly.Api()
 
 # get variables from enviroment
 project_id = sly.env.project_id()
-team_id = sly.env.project_id()
+team_id = sly.env.team_id()
 
 # Example 1. Use tqdm in the loop.
 batch_size = 10

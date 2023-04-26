@@ -4,8 +4,6 @@
 
 In this tutorial we will show you how to use tqdm module inside methods of Supervisely SDK in seamless manner.
 
-You will learn how to:
-
 📗 Everything you need to reproduce [this tutorial is on GitHub](https://github.com/supervisely-ecosystem/tutorial-tqdm): source code.
 
 ## How to debug this tutorial
@@ -69,7 +67,7 @@ In this tutorial, you will need an workspace ID that you can get from environmen
 
 ```python
 project_id = sly.env.project_id()
-team_id = sly.env.project_id()
+team_id = sly.env.team_id()
 ```
 
 ## Use tqdm for tracking progress
@@ -91,15 +89,15 @@ with tqdm(total=len(data)) as pbar:
 
 **Output:**
 
-screen
+![example_1_1](https://user-images.githubusercontent.com/78355358/234561243-f58d3821-29c1-4ece-bf93-0dabed6d7329.gif)
 
 {% hint style="info" %}
 
-When running locally, the fancy-looking tqdm progress bar will be displayed in the console, while in production, JSON-looking lines with relevant information will be logged. (see following gif)
+When running locally, the fancy-looking tqdm progress bar will be displayed in the console, while in production, JSON-looking lines with relevant information will be logged.
 
 {% endhint %}
 
-screen
+![example_1_2](https://user-images.githubusercontent.com/78355358/234561433-1570eb19-7f78-4f74-bf37-98bc6d1725c2.gif)
 
 ### Example 2. Download image project and upload it into Team files using tqdm progress bar.
 
@@ -134,7 +132,9 @@ Then, you can upload downloaded directory to Team files:
 
 **Output:**
 
-screen
+![example_2_1](https://user-images.githubusercontent.com/78355358/234561669-eef09fce-518b-4cd0-9550-63c8da962131.gif)
+
+![example_2_2](https://user-images.githubusercontent.com/78355358/234564625-f9ff0ab2-2775-44c8-b2fc-96a661828298.gif)
 
 ### Example 3 (advanced). Use native sly.Progress functions for downloading.
 
@@ -167,7 +167,9 @@ Then, you can upload downloaded directory to Team files:
 
 **Output:**
 
-screen
+![example_3_1](https://user-images.githubusercontent.com/78355358/234561956-0002d4f7-fb96-44d5-b346-88f7b83f4714.gif)
+
+![example_3_2](https://user-images.githubusercontent.com/78355358/234562015-2bde0cfa-3fcc-4a6b-a3f5-f3cb7203cc8b.gif)
 
 {% hint style="info" %}
 
