@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In this tutorial we will show you how to use tqdm module inside methods of Supervisely SDK in seamless manner.
+In this tutorial we will show you how to use tqdm module inside methods of Supervisely SDK in a seamless manner.
 
 📗 Everything you need to reproduce [this tutorial is on GitHub](https://github.com/supervisely-ecosystem/tutorial-tqdm): source code.
 
@@ -173,6 +173,6 @@ Then, you can upload downloaded directory to Team files:
 
 {% hint style="info" %}
 
-You can swap equivalent arguments from `sly.Progress` while initializing `tqdm`. For example, the `desc` argument can be replaced with `message`, and `total` can be replaced with `total_cnt`. Additionally, both `unit` and `unit_scale` can be replaced with `is_size`."
+You can swap equivalent arguments from `sly.Progress` while initializing `tqdm`. For example, the `desc` argument can be replaced with `message`, and `total` can be replaced with `total_cnt`. Additionally, both `unit="B"` and `unit_scale=True` can be replaced with `is_size=True`."
 
 {% endhint %}
